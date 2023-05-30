@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-block {
+    background-image: linear-gradient(to top left, blue, aqua, purple);
+  }
+
+  .main-block article {
+    display: flex;
+    /* flex-direction: co; */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3vw;
+    padding: 5vw 0px;
+  }
+
+  .card {
+    /* border: 1px solid white; */
+    width: 20vw;
+    padding: 1vw;
+
+    padding-top: 2vw;
+    background-color: rgba(255, 255, 255, 0.326);
+    border-radius: 0.2vw;
+    position: relative;
+    transition-property: all;
+    transition-duration: 0.5s;
+  }
+
+  .card:hover {
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.605);
+    box-shadow: 0px 0px 20px 0.3px rgba(255, 255, 255, 0.904);
+  }
+
+  .card img {
+    width: 100%;
+  }
+
+  .card h2 {
+    font-size: 2.7vw;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  .card h3 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.4vw;
+    background-image: linear-gradient(
+      to bottom right,
+      rgb(0, 222, 230),
+      rgba(97, 2, 97, 0.668)
+    );
+    font-weight: bold;
+    border-radius: 5%;
+    display: inline-block;
+    color: white;
+    position: absolute;
+    top: -15px;
+    left: 0%;
+    /* margin: auto; */
+    padding: 0.5vw 2vw;
+  }
+
+  .card a {
+    background-color: white;
+    text-decoration: none;
+    color: rgb(69, 0, 69);
+    font-size: 1.5vw;
+    /* width: 100%; */
+    display: block;
+    text-align: center;
+    margin: 1vw;
+    font-weight: bold;
+    padding: 0.5vw 0px;
+  }
+
+  a:hover {
+    background-color: rgb(69, 0, 69);
+    color: white;
+  }
+
+  /* 320,540 , 768, 1024 , 1536 */
+
+  @media screen and (min-width: 0px) {
+    .main-block article {
+      padding: 20vw 10vw;
+      gap: 10vw;
+    }
+
+    .card {
+      width: 80vw;
+      padding: 4vw;
+    }
+
+    .card h2 {
+      font-size: 8vw;
+    }
+
+    .card h3 {
+      font-size: 4vw;
+    }
+
+    .card a {
+      font-size: 5vw;
+      padding: 1.5vw;
+    }
+  }
+
+  @media screen and (min-width: 321px) {
+  }
+  @media screen and (min-width: 541px) {
+    .main-block article {
+      gap: 4vw;
+      padding: 20vw 1vw;
+    }
+
+    .card {
+      width: 40vw;
+      padding: 2vw;
+    }
+
+    .card h2 {
+      font-size: 5vw;
+    }
+
+    .card h3 {
+      font-size: 2vw;
+    }
+
+    .card a {
+      font-size: 3vw;
+      padding: 1vw;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .main-block article {
+      gap: 3.5vw;
+      padding: 10vw 1vw;
+    }
+
+    .card {
+      width: 25vw;
+      padding: 1.5vw;
+    }
+
+    .card h2 {
+      font-size: 3vw;
+    }
+
+    .card h3 {
+      font-size: 1.1vw;
+    }
+
+    .card a {
+      font-size: 2vw;
+      padding: 0.6vw;
+    }
+  }
